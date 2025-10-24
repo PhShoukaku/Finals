@@ -4,62 +4,115 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WHERE THE GAMES BEGIN</title>
-  
-  <style>
-    img.spin:hover {
-      transform: rotate(360deg);
-      transition: transform 1s ease-in-out;
-    }
-  </style>
-  
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body style="margin:0; font-family:Arial, sans-serif; background:linear-gradient(to bottom, #0b0c1b, #3c00ff); color:white;">
-  <header style="background:#222; display:flex; justify-content:space-between; align-items:center; padding:15px 40px;">
-    <div style="font-size:22px; font-weight:bold;">My Games</div>
+<body>
+  <header>
+    <div class="logo">
+      <h2>My Games</h2>
+    </div>
     <nav>
-      <a href="index.html" style="color:white; text-decoration:none; margin:0 15px;">Home</a>
-      <a href="About us.html" style="color:#00bfff; text-decoration:none; margin:0 15px;">About Us</a>
-      <a href="moregames.html" style="color:white; text-decoration:none; margin:0 15px;">More Games</a>
-      <a href="contact.html" style="color:white; text-decoration:none; margin:0 15px;">Contact</a>
-      <a href="register.html" style="color:white; text-decoration:none; margin:0 15px;">Register</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="About us.html">About Us</a>
+      <a href="moregames.html">More Games</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
     </nav>
   </header>
 
-  <main style="padding:60px 20px; text-align:center;">
-    <h2 style="font-size:40px; background:linear-gradient(90deg, #00aaff, #ff00cc); -webkit-background-clip:text; color:transparent; margin-bottom:40px;">About Us</h2>
+  <section class="hero fade-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="gradient-text">Welcome to Our Favorite Games</h1>
+      <p class="gradient-text">Discover our favorite games</p>
+    </div>
+  </section>
 
-    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:40px;">
-      <div style="background:rgba(255,255,255,0.1); border-radius:20px; padding:30px; width:280px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.4);">
-        <img class="spin" src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-1/481467262_650800117694766_4295976042659853767_n.jpg?stp=c16.0.848.848a_dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGzLB1FOBjZtFvXE2pe_JjdeyV6nBMH1Jh7JXqcEwfUmJa1_UlIAHzn0CQWBN1TwrIJXWVyBow15BmB52B2mnCF&_nc_ohc=z57pGkjk3vAQ7kNvwEjihTX&_nc_oc=AdkfcpWg8gXOysSXUGYxTuDHh_EC5wMj7Swcf-TnAfoOL8hW_JHNGrTmom5s6jLy3WY&_nc_zt=24&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=LnNZ9I2cMYBg66NtoN-RbQ&oh=00_AfdOZjviZTyPwS4y3e8tfWH20K9nyuPbX4vpL-AZ6GiTXA&oe=68FCB8FE" 
-        alt="Juan Nhoel M. De Leon" 
-        style="width:180px; height:180px; border-radius:20px; object-fit:cover; border:3px solid #00cc66; transition:transform 1s ease-in-out;">
-        <h3 style="margin-top:15px; color:#00cc66;">Juan Nhoel M. De Leon</h3>
-        <p style="color:#ddd;">Information Technology Department</p>
+  <section id="games" class="fade-section">
+    <div class="featured-container">
+      <div class="featured-post">
+        <img src="https://gamerjournalist.com/wp-content/uploads/2023/06/Roblox-Decaying-Winter-Cover-Artwork.jpg?w=1024" alt="Decaying Winter">
+        <div>
+          <h3>Decaying Winter</h3>
+          <p>Decaying Winter is a hardcore survival game that challenges you to master every mechanic and survive intense waves of enemies.</p>
+          <a href="https://www.roblox.com/games/13438553315/Decaying-Winter" target="_blank">Read More</a>
+        </div>
       </div>
 
-      <div style="background:rgba(255,255,255,0.1); border-radius:20px; padding:30px; width:280px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.4);">
-        <img class="spin" src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-1/471589168_1324038185292977_6481781051743456668_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHCq6319uvPxFEw04Nlx3opKoS2EeHBxfoqhLYR4cHF-iT5GblYXMWjg2LpAcGwoUymspJGEHx-xZbwafsGEdG5&_nc_ohc=YwPOpDxqbDMQ7kNvwF4pPnu&_nc_oc=AdlWZ4FwoLEVYqxwlZfwCwIMZgzpeuOj-Dz-rAa9y0zdwjYKPqZfed40g5hAEi6j3zI&_nc_zt=24&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=GSGmiKQve3AeoSrwtjECAA&oh=00_Afdd9ILD9SJdbXapdufsmj8muScLubYYZ9Rl5oC-xkF7QQ&oe=68FCC50B" 
-        alt="Leonardo E. Mariano" 
-        style="width:180px; height:180px; border-radius:20px; object-fit:cover; border:3px solid #ffcc00; transition:transform 1s ease-in-out;">
-        <h3 style="margin-top:15px; color:#ffcc00;">Leonardo E. Mariano</h3>
-        <p style="color:#ddd;">Game Development Department</p>
+      <div class="featured-post">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.tQapiu8ABdkDDFD492MbgAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Prospecting">
+        <div>
+          <h3>Prospecting</h3>
+          <p>Prospecting is an exciting Roblox game filled with exploration and challenges.</p>
+          <a href="https://www.roblox.com/games/129827112113663/Prospecting" target="_blank">Read More</a>
+        </div>
+      </div>
+
+      <div class="featured-post">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWXjt2JRel3Lraqnn1L1Wg7nwl8ecGD9cUYno7kloD038GYhBQio5WMr2ouICTlMexRLW_gEanCf74wJ4ZRNuL0nKjn4o8WHede-xbf3X2UAyQlMuArU7WYW66FbGM0p8Nnv6Ho9Hm3uU/s1600/C&C-Genrals-Zero-Hour-pc-game.jpg" alt="Command & Conquer">
+        <div>
+          <h3>Command & Conquer: Generals Zero Hour</h3>
+          <p>Engage in modern warfare strategy and global conflicts with tactical brilliance in this iconic RTS game.</p>
+          <a href="https://store.steampowered.com/app/2732960/Command__Conquer_Generals_Zero_Hour/" target="_blank">Read More</a>
+        </div>
+      </div>
+
+      <div class="featured-post">
+        <img src="https://pbs.twimg.com/media/Fqs6CDJaMAALtZP?format=jpg&name=4096x4096" alt="Punishing Gray Raven">
+        <div>
+          <h3>Punishing Gray Raven</h3>
+          <p>A fast-paced action RPG that tests your reflexes and strategy, perfect for gamers who love a challenge.</p>
+          <a href="https://pgr.kurogame.net/" target="_blank">Read More</a>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div style="max-width:700px; margin:60px auto 0; font-size:18px; line-height:1.6; color:#eee;">
-      <h4 style="background:linear-gradient(90deg, #00aaff, #ff00cc); -webkit-background-clip:text; color:transparent;">Basic HTML & C++ Developers</h4>
-      <p>Hello! We are <strong>Juan Nhoel M. De Leon</strong> (Nhoel) and <strong>Leonardo E. Mariano</strong> (Leo), the developers behind this gaming website. We are passionate students from the <em>Information Technology</em> and <em>Game Development</em> departments, aiming to create engaging and innovative content as members of the <strong>COECS Department</strong>.</p>
+  <section id="about" class="about-me fade-section">
+    <h2>About Us</h2>
+    <div class="team">
+      <div class="member">
+        <img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-1/481467262_650800117694766_4295976042659853767_n.jpg?stp=c16.0.848.848a_dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGzLB1FOBjZtFvXE2pe_JjdeyV6nBMH1Jh7JXqcEwfUmJa1_UlIAHzn0CQWBN1TwrIJXWVyBow15BmB52B2mnCF&_nc_ohc=z57pGkjk3vAQ7kNvwEjihTX&_nc_oc=AdkfcpWg8gXOysSXUGYxTuDHh_EC5wMj7Swcf-TnAfoOL8hW_JHNGrTmom5s6jLy3WY&_nc_zt=24&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=LnNZ9I2cMYBg66NtoN-RbQ&oh=00_AfdOZjviZTyPwS4y3e8tfWH20K9nyuPbX4vpL-AZ6GiTXA&oe=68FCB8FE" alt="Juan Nhoel">
+        <h4>Juan Nhoel M. De Leon</h4>
+        <p>Information Technology Department</p>
+      </div>
+
+      <div class="member">
+        <img src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-1/471589168_1324038185292977_6481781051743456668_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHCq6319uvPxFEw04Nlx3opKoS2EeHBxfoqhLYR4cHF-iT5GblYXMWjg2LpAcGwoUymspJGEHx-xZbwafsGEdG5&_nc_ohc=YwPOpDxqbDMQ7kNvwF4pPnu&_nc_oc=AdlWZ4FwoLEVYqxwlZfwCwIMZgzpeuOj-Dz-rAa9y0zdwjYKPqZfed40g5hAEi6j3zI&_nc_zt=24&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=GSGmiKQve3AeoSrwtjECAA&oh=00_Afdd9ILD9SJdbXapdufsmj8muScLubYYZ9Rl5oC-xkF7QQ&oe=68FCC50B" alt="Leonardo Mariano">
+        <h4>Leonardo E. Mariano</h4>
+        <p>Game Development Department</p>
+      </div>
     </div>
-  </main>
+  </section>
 
-  <footer style="background:#333; text-align:center; padding:25px 0; margin-top:50px; border-top:2px solid #00aaff;">
-    <p style="margin:5px 0;">&copy; 2025 My Personal Games. All rights reserved.</p>
-    <div style="margin-top:10px;">
-      <a href="https://www.facebook.com/juan.de.leon.239538" target="_blank" style="color:#00aaff; margin:0 10px; text-decoration:none;">Facebook</a>
-      <a href="https://x.com/PhShokaku" target="_blank" style="color:#00aaff; margin:0 10px; text-decoration:none;">Twitter</a>
-      <a href="#" style="color:#00aaff; margin:0 10px; text-decoration:none;">Instagram</a>
+  <footer>
+    <p>&copy; 2025 My Personal Games. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/juan.de.leon.239538" target="_blank">Facebook</a>
+      <a href="https://x.com/PhShokaku" target="_blank">Twitter</a>
+      <a href="#">Instagram</a>
     </div>
   </footer>
+  
+  <!--HUWAG MONG AALISIN ANG SCRIPT LEO KASI NASIRA ANG CODE KO MISMO GAWA NITO-->
+  <script>
+    const sections = document.querySelectorAll('.fade-section');
+    const appearOnScroll = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.2 }
+    );
+
+    sections.forEach(section => {
+      appearOnScroll.observe(section);
+    });
+  </script>
+  
 </body>
 </html>
