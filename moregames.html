@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gaming Platforms and Developers — Steam, EA, Riot Games, Ubisoft">
+  <title>WHERE THE GAMES BEGIN</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: linear-gradient(270deg, #1f1c2c, #928dab, #2b5876, #4e4376);
+      background-size: 800% 800%;
+      animation: gradientShift 15s ease infinite;
+      color: #f9f9f9;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 3rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .logo h2 {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #00ffff;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .featured-section {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .featured-post {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 1.5rem;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .featured-post:hover {
+      transform: scale(1.03);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .featured-post img {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #fff;
+      padding: 10px;
+      transition: transform 0.5s ease;
+    }
+
+    .featured-post img:hover {
+      transform: rotate(10deg) scale(1.1);
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .content h2 {
+      font-size: 1.5rem;
+      color: #00ffff;
+    }
+
+    .content p {
+      line-height: 1.6;
+      color: #f0f0f0;
+    }
+
+    .content a {
+      align-self: flex-start;
+      margin-top: 0.5rem;
+      background: #00ffff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .content a:hover {
+      background: #00b3b3;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 1rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .social-links a {
+      color: #00ffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .featured-post {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .featured-post img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h2>My Games</h2>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="About us.html">About Us</a>
+      <a href="moregames.html" class="active">More Games</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="featured-section">
+      <div class="featured-post">
+        <img src="https://logos-world.net/wp-content/uploads/2020/10/Steam-Logo-2014-present.jpg" alt="Steam Logo">
+        <div class="content">
+          <h2>Steam</h2>
+          <p>Steam is a digital distribution service and storefront developed by Valve. It was launched as a software client in September 2003 to provide video game updates automatically for Valve's games and expanded to distributing third-party titles in late 2005.</p>
+          <a href="https://store.steampowered.com/" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </div>
+
+      <div class="featured-post">
+        <img src="https://logos-world.net/wp-content/uploads/2020/08/EA-Symbol.png" alt="EA Logo">
+        <div class="content">
+          <h2>Electronic Arts (EA)</h2>
+          <p>Electronic Arts Inc. is an American video game company headquartered in Redwood City, California. Founded in May 1982, the company was a pioneer of the early home computer game industry and promoted the designers and programmers responsible for the games.</p>
+          <a href="https://www.ea.com/" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </div>
+
+      <div class="featured-post">
+        <img src="https://logos-world.net/wp-content/uploads/2022/05/Riot-Games-New-Logo.png" alt="Riot Games Logo">
+        <div class="content">
+          <h2>Riot Games</h2>
+          <p>Riot Games, Inc. is an American video game developer, publisher, and esports organizer based in Los Angeles. Founded in 2006, Riot Games created League of Legends and other popular titles, later acquired by Tencent in 2011.</p>
+          <a href="https://www.riotgames.com/en" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </div>
+
+      <div class="featured-post">
+        <img src="https://logos-world.net/wp-content/uploads/2023/02/Ubisoft-Logo-2003.png" alt="Ubisoft Logo">
+        <div class="content">
+          <h2>Ubisoft</h2>
+          <p>Ubisoft Entertainment SA is a French video game publisher headquartered in Saint-Mandé with development studios across the world.</p>
+          <a href="https://www.ubisoft.com/en-us" target="_blank" rel="noopener">Read More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer>
+    <p>&copy; 2025 My Personal Games. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/juan.de.leon.239538" target="_blank">Facebook</a>
+      <a href="https://x.com/PhShokaku" target="_blank">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+  
+</body>
+</html>

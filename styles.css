@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1.2s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #00bfff, #ff6ec4, #8e2de2, #4a00e0);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .logo h2 {
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #00bfff;
+}
+
+.hero {
+  position: relative;
+  background-image: url("https://tse1.mm.bing.net/th/id/OIP.E6MF-qPdYCsbd4ZYMEkx_AHaEo?rs=1&pid=ImgDetMain&o=7&rm=3");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 120px 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  background-color: #d3d3d3;
+  margin: 20px auto;
+  max-width: 1000px;
+  border-radius: 15px;
+  gap: 20px;
+}
+
+/* ✅ Smooth Zoom Effect */
+.featured-post img {
+  width: 45%;
+  border-radius: 20px;
+  transition: transform 0.8s ease;
+}
+
+.featured-post img:hover {
+  transform: scale(1.1);
+}
+
+.featured-post div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featured-post a {
+  display: inline-block;
+  background-color: #0078d7;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.featured-post a:hover {
+  background-color: #005fa3;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: linear-gradient(270deg, #4a00e0, #8e2de2, #00bfff, #ff6ec4);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+  color: white;
+  text-align: center;
+}
+
+.about-me h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.member {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 20px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ✅ Smooth Zoom Effect for Team Members */
+.member img {
+  width: 220px;
+  height: 220px;
+  border-radius: 15px;
+  border: 3px solid white;
+  transition: transform 0.8s ease;
+  object-fit: cover;
+}
+
+.member img:hover {
+  transform: scale(1.1);
+}
+
+.member h4 {
+  margin-top: 15px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.member p {
+  font-size: 1rem;
+  color: #f0f0f0;
+}
+
+.contact {
+  padding: 40px 20px;
+  text-align: center;
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.rotate-button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+  perspective: 1000px;
+  align-self: center;
+}
+
+.rotate-button:hover {
+  transform: rotateX(180deg);
+  background-color: #2ecc71;
+}
+
+#output {
+  margin-top: 20px;
+  background: #e6f0ff;
+  padding: 15px;
+  border-radius: 8px;
+  display: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer a {
+  color: #00bfff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  .featured-post {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featured-post img {
+    width: 100%;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+
+  .member {
+    width: 80%;
+  }
+
+  .member img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+img {
+  border: 2px solid gray;
+  border-radius: 10px;
+  object-fit: cover;
+}

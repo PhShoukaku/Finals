@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h2>My Games</h2>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="About us.html">About us</a>
+      <a href="moregames.html">More Games</a>
+      <a href="contact.html">Contact</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <section class="container">
+    <h2>Registration Form</h2>
+    <form id="regForm">
+      <label>Full Name:</label>
+      <input type="text" id="name" required>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+
+      <label>Gender:</label>
+      <select id="gender" required>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Date of Birth:</label>
+      <input type="date" id="dob" required>
+
+      <label>Address:</label>
+      <textarea id="address" rows="3" required></textarea>
+
+      <label>Age:</label>
+      <input type="number" id="age" min="1" required>
+
+      <button type="button" onclick="registerUser()">Register</button>
+    </form>
+
+    <div id="output"></div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 My Personal Games. All rights reserved.</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/juan.de.leon.239538" target="_blank">Facebook</a>
+      <a href="https://x.com/PhShokaku" target="_blank">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+</body>
+</html>

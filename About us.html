@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WHERE THE GAMES BEGIN</title>
+  
+  <style>
+    img.spin:hover {
+      transform: rotate(360deg);
+      transition: transform 1s ease-in-out;
+    }
+  </style>
+  
+</head>
+
+<body style="margin:0; font-family:Arial, sans-serif; background:linear-gradient(to bottom, #0b0c1b, #3c00ff); color:white;">
+  <header style="background:#222; display:flex; justify-content:space-between; align-items:center; padding:15px 40px;">
+    <div style="font-size:22px; font-weight:bold;">My Games</div>
+    <nav>
+      <a href="index.html" style="color:white; text-decoration:none; margin:0 15px;">Home</a>
+      <a href="About us.html" style="color:#00bfff; text-decoration:none; margin:0 15px;">About Us</a>
+      <a href="moregames.html" style="color:white; text-decoration:none; margin:0 15px;">More Games</a>
+      <a href="contact.html" style="color:white; text-decoration:none; margin:0 15px;">Contact</a>
+      <a href="register.html" style="color:white; text-decoration:none; margin:0 15px;">Register</a>
+    </nav>
+  </header>
+
+  <main style="padding:60px 20px; text-align:center;">
+    <h2 style="font-size:40px; background:linear-gradient(90deg, #00aaff, #ff00cc); -webkit-background-clip:text; color:transparent; margin-bottom:40px;">About Us</h2>
+
+    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:40px;">
+      <div style="background:rgba(255,255,255,0.1); border-radius:20px; padding:30px; width:280px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.4);">
+        <img class="spin" src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-1/481467262_650800117694766_4295976042659853767_n.jpg?stp=c16.0.848.848a_dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeGzLB1FOBjZtFvXE2pe_JjdeyV6nBMH1Jh7JXqcEwfUmJa1_UlIAHzn0CQWBN1TwrIJXWVyBow15BmB52B2mnCF&_nc_ohc=z57pGkjk3vAQ7kNvwEjihTX&_nc_oc=AdkfcpWg8gXOysSXUGYxTuDHh_EC5wMj7Swcf-TnAfoOL8hW_JHNGrTmom5s6jLy3WY&_nc_zt=24&_nc_ht=scontent.fmnl4-4.fna&_nc_gid=LnNZ9I2cMYBg66NtoN-RbQ&oh=00_AfdOZjviZTyPwS4y3e8tfWH20K9nyuPbX4vpL-AZ6GiTXA&oe=68FCB8FE" 
+        alt="Juan Nhoel M. De Leon" 
+        style="width:180px; height:180px; border-radius:20px; object-fit:cover; border:3px solid #00cc66; transition:transform 1s ease-in-out;">
+        <h3 style="margin-top:15px; color:#00cc66;">Juan Nhoel M. De Leon</h3>
+        <p style="color:#ddd;">Information Technology Department</p>
+      </div>
+
+      <div style="background:rgba(255,255,255,0.1); border-radius:20px; padding:30px; width:280px; text-align:center; box-shadow:0 5px 15px rgba(0,0,0,0.4);">
+        <img class="spin" src="https://scontent.fmnl4-7.fna.fbcdn.net/v/t39.30808-1/471589168_1324038185292977_6481781051743456668_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeHCq6319uvPxFEw04Nlx3opKoS2EeHBxfoqhLYR4cHF-iT5GblYXMWjg2LpAcGwoUymspJGEHx-xZbwafsGEdG5&_nc_ohc=YwPOpDxqbDMQ7kNvwF4pPnu&_nc_oc=AdlWZ4FwoLEVYqxwlZfwCwIMZgzpeuOj-Dz-rAa9y0zdwjYKPqZfed40g5hAEi6j3zI&_nc_zt=24&_nc_ht=scontent.fmnl4-7.fna&_nc_gid=GSGmiKQve3AeoSrwtjECAA&oh=00_Afdd9ILD9SJdbXapdufsmj8muScLubYYZ9Rl5oC-xkF7QQ&oe=68FCC50B" 
+        alt="Leonardo E. Mariano" 
+        style="width:180px; height:180px; border-radius:20px; object-fit:cover; border:3px solid #ffcc00; transition:transform 1s ease-in-out;">
+        <h3 style="margin-top:15px; color:#ffcc00;">Leonardo E. Mariano</h3>
+        <p style="color:#ddd;">Game Development Department</p>
+      </div>
+    </div>
+
+    <div style="max-width:700px; margin:60px auto 0; font-size:18px; line-height:1.6; color:#eee;">
+      <h4 style="background:linear-gradient(90deg, #00aaff, #ff00cc); -webkit-background-clip:text; color:transparent;">Basic HTML & C++ Developers</h4>
+      <p>Hello! We are <strong>Juan Nhoel M. De Leon</strong> (Nhoel) and <strong>Leonardo E. Mariano</strong> (Leo), the developers behind this gaming website. We are passionate students from the <em>Information Technology</em> and <em>Game Development</em> departments, aiming to create engaging and innovative content as members of the <strong>COECS Department</strong>.</p>
+    </div>
+  </main>
+
+  <footer style="background:#333; text-align:center; padding:25px 0; margin-top:50px; border-top:2px solid #00aaff;">
+    <p style="margin:5px 0;">&copy; 2025 My Personal Games. All rights reserved.</p>
+    <div style="margin-top:10px;">
+      <a href="https://www.facebook.com/juan.de.leon.239538" target="_blank" style="color:#00aaff; margin:0 10px; text-decoration:none;">Facebook</a>
+      <a href="https://x.com/PhShokaku" target="_blank" style="color:#00aaff; margin:0 10px; text-decoration:none;">Twitter</a>
+      <a href="#" style="color:#00aaff; margin:0 10px; text-decoration:none;">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
