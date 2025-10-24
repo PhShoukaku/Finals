@@ -117,8 +117,6 @@ nav a.active {
   border-radius: 15px;
   gap: 20px;
 }
-
-/* ✅ Smooth Zoom Effect */
 .featured-post img {
   width: 45%;
   border-radius: 20px;
@@ -197,8 +195,6 @@ nav a.active {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
 }
-
-/* ✅ Smooth Zoom Effect for Team Members */
 .member img {
   width: 220px;
   height: 220px;
@@ -207,11 +203,9 @@ nav a.active {
   transition: transform 0.8s ease;
   object-fit: cover;
 }
-
 .member img:hover {
   transform: scale(1.1);
 }
-
 .member h4 {
   margin-top: 15px;
   font-size: 1.3rem;
